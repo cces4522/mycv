@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{
+		background-color: #E8CCFF;
+		margin:90px;
+		margin-top: 20px;
+		text-align: center;
+		font-family: 微軟正黑體;
+	}
+	.pic{
+		width: 250px;
+		margin:50px;
+		margin-bottom:10px;		
+	}
+	.bold{
+		font-weight: bold;
+		color:	#003377; 
+		font-size: 30px;
+
+	}
+	.title{
+		color:green;
+		font-family: fantasy;
+		font-size: 200px;
+		margin-top: 30px;
+		margin-bottom: 0;
+		letter-spacing:10px;
+		font-style: italic;
+	}
+	#container {
+ 		width: 100%;
+ 		text-align: center;
+ 		background-color: pink;
+ 		border-radius: 40px;		
+		}
+	#divleft {
+		float: left;
+		width: 39%;
+		margin-left: 10%;
+		margin-top: 35px;
+		background-color:	#EEFFBB;
+		position:relative; 
+		
+		}
+	#divright {
+		float: left;
+		width: 39%;
+		margin-right: 10%;
+		margin-top: 35px;
+		background-color: #EEFFBB;
+		position:relative; 
+		}
+	#footer {
+		clear: both;
+		width: 100%;
+		background-color: orange;
+		border-radius: #EEFFBB;
+		}
+	p{
+		margin:40px;
+	}
+	.skills {
+	  text-align: right;
+	  padding: 10px;
+	  color: white;
+	}
+	.html {width: 80%; background-color: #00AA00;}
+	.css {width: 55%; background-color: #007799;}
+	.js {width: 45%; background-color: #886600;}
+	.c {width: 90%; background-color: #B94FFF;}
+	
+	.ori{
+		margin:15px;
+		color:#66009D; 
+	}
+
+	.timeline {
+	  position: relative;
+	  max-width: 400px;
+	  margin: 0 auto;
+	}
+	.timeline::after {
+	  content: '';
+	  position: absolute;
+	  width: 6px;
+	  background-color: white;
+	  top: 0;
+	  bottom: 10px;
+	  left: 10px;
+	  margin-left: -3px;
+	}
+	.times {
+	  padding: 10px 30px;
+	  position: relative;
+	  width: 90%;
+	  height: 80px;
+	  
+	}
+	.times::after {
+	  content: '';
+	  position: absolute;
+	  width: 20px;
+	  height: 20px;
+	  left: -4px;
+	  background-color:white; 
+	  border: 4px solid #FF8800;
+	  top: 15px;
+	  border-radius: 50%;
+	  z-index: 1;
+	}
+	.time {
+	  position: relative;
+	  top:-11px;
+	}
+	h3{
+		font-weight: bold;
+	}
+
+	</style>
+	
+</head>
+<body>
+	<p class="title">
+	<img src="images/logo.jpg" alt="logo" style="width:20%;border-radius: 200px;">
+	YuHsin
+	</p>
+	<div id="container"> 
+	<!--左邊--> 		
+    	<div id="divleft">
+    		<img src="images/yuhsin.jpg" alt="logo" class="pic">
+    		<br>
+    		<p class="bold">
+    			『人生就像剛學步的孩子，<br>
+    			跌倒了沒關係，<br>
+    			勇敢的站起來繼續向前!』</p>
+    		<p>
+    		來自新竹縣，在樸實的城市中長大，目前就讀中原大學資管學系三年級。活潑、開朗、笑容總是時常掛在臉上。喜歡新奇的事物，熱愛運動，人生摯愛非排球莫屬!!
+    		</p>
+    		<p class="bold">專業技能</p>
+			<p class="ori">HTML</p>
+       		<div class="container">
+			  <div class="skills html">80%</div>
+			</div>
+
+			<p class="ori">CSS</p>
+			<div class="container">
+			  <div class="skills css">55%</div>
+			</div>
+
+			<p class="ori">JavaScript</p>
+			<div class="container">
+			  <div class="skills js">45%</div>
+			</div>
+
+			<p class="ori">C++</p>
+			<div class="container">
+			  <div class="skills c">90%</div>
+			</div>
+    	</div>
+    	<!---右邊-->
+    	<div id="divright">
+    		<p class="bold">課程專案</p>
+    		<div class="timeline">
+					<div class="times">
+						<div class="time">
+							<h3>管理學<br>
+							愛筵社桃姊妹格子鋪合作 <br>
+							單親媽媽愛心義賣。
+						</h3>
+							
+						</div>
+					</div>
+					<div class="times">
+						<div class="time">
+							<h3>企業概論<br>
+								中原大學 聖瑪莉亞基金會
+								愛心帆布包義賣。
+							</h3>
+							
+						</div>
+					</div>
+					
+					<div class="times">
+						<div class="time">
+							<h3>多媒體程式設計<br>
+							冰淇淋賣場</h3>							
+						</div>
+					</div>
+				</div>
+
+				<p class="bold">社團經驗</p>
+				-物理系女排<br>
+				<img src="images/ins2.jpg" alt="logo" class="pic" style="margin-top:10px; width:70%"><br>
+				-資管系女排<br>
+				<img src="images/2.jpg" alt="logo" class="pic" style="margin-top:10px;width:70%"><br>
+    	</div>
+    	<div id="footer"><br></div>
+    	
+  	</div>
+	
+  	
+</body>
+</html>
